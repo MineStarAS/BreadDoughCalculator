@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/MineStar/IntelliJIDEAProjects/BreadDoughCalculator/app/src/main/res/layout/activity_main.xml" value="0.2164855072463768" />
+        <entry key="..\:/Users/MineStar/IntelliJIDEAProjects/MyTestApp/app/src/main/res/drawable/category_frame.xml" value="0.2989583333333333" />
+        <entry key="..\:/Users/MineStar/IntelliJIDEAProjects/MyTestApp/app/src/main/res/drawable/enter_text_frame.xml" value="0.2989583333333333" />
+        <entry key="..\:/Users/MineStar/IntelliJIDEAProjects/MyTestApp/app/src/main/res/drawable/fix_text_frame.xml" value="0.3380208333333333" />
+        <entry key="..\:/Users/MineStar/IntelliJIDEAProjects/MyTestApp/app/src/main/res/drawable/frame.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/MineStar/IntelliJIDEAProjects/MyTestApp/app/src/main/res/drawable/frame0.xml" value="0.3380208333333333" />
+        <entry key="..\:/Users/MineStar/IntelliJIDEAProjects/MyTestApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/MineStar/IntelliJIDEAProjects/MyTestApp/app/src/main/res/drawable/textdata.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/MineStar/IntelliJIDEAProjects/MyTestApp/app/src/main/res/drawable/textstyle.xml" value="0.33697916666666666" />
+        <entry key="..\:/Users/MineStar/IntelliJIDEAProjects/MyTestApp/app/src/main/res/font/font.xml" value="0.2869791666666667" />
+        <entry key="..\:/Users/MineStar/IntelliJIDEAProjects/MyTestApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="temurin-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

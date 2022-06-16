@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context="app.MainActivity">
+
+    <!-- 재료 -->
+    <FrameLayout android:id="@+id/ingredientFrameLayout0"
+            style="@style/categoryFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+        <TextView android:id="@+id/ingredientTextView0"
+                  style="@style/categoryText"
+                  android:text="재료"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/ingredientFrameLayout1"
+            style="@style/ingredientFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientFrameLayout0">
+        <TextView android:id="@+id/ingredientTextView1"
+                  style="@style/text"
+                  android:text="밀가루"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/ingredientFrameLayout2"
+            style="@style/ingredientFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientFrameLayout1">
+        <TextView android:id="@+id/ingredientTextView2"
+                  style="@style/text"
+                  android:text="물"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/ingredientFrameLayout3"
+            style="@style/ingredientFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientFrameLayout2">
+        <TextView android:id="@+id/ingredientTextView3"
+                  style="@style/text"
+                  android:text="소금"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/ingredientFrameLayout4"
+            style="@style/ingredientFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientFrameLayout3">
+        <TextView android:id="@+id/ingredientTextView4"
+                  style="@style/text"
+                  android:text="이스트"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/ingredientFrameLayout5"
+            style="@style/ingredientFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientFrameLayout4">
+        <TextView android:id="@+id/ingredientTextView5"
+                  style="@style/text"
+                  android:text="유지"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/ingredientFrameLayout6"
+            style="@style/ingredientFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientFrameLayout5">
+        <TextView android:id="@+id/ingredientTextView6"
+                  style="@style/text"
+                  android:text="계란"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/ingredientFrameLayout7"
+            style="@style/ingredientFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientFrameLayout6">
+        <TextView android:id="@+id/ingredientTextView7"
+                  style="@style/text"
+                  android:text="설탕"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/ingredientFrameLayout8"
+            style="@style/ingredientFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientFrameLayout7">
+        <TextView android:id="@+id/ingredientTextView8"
+                  style="@style/text"
+                  android:text="분유"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/ingredientFrameLayout9"
+            style="@style/ingredientFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientFrameLayout8">
+        <TextView android:id="@+id/ingredientTextView9"
+                  style="@style/text"
+                  android:text="개량제"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/ingredientFrameLayout10"
+            style="@style/categoryFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientFrameLayout9">
+        <TextView android:id="@+id/ingredientTextView10"
+                  style="@style/text"
+                  android:text="합계"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+
+    <!-- 퍼센트 -->
+    <FrameLayout android:id="@+id/percentFrameLayout0"
+            style="@style/categoryFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/ingredientFrameLayout0"
+            app:layout_constraintLeft_toRightOf="@+id/ingredientFrameLayout0">
+        <TextView android:id="@+id/percentTextView0"
+                  style="@style/categoryText"
+                  android:text="%"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/percentFrameLayout1"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/ingredientFrameLayout1"
+            app:layout_constraintLeft_toRightOf="@+id/ingredientFrameLayout1">
+        <TextView android:id="@+id/percentTextView1"
+                  style="@style/text"
+                  android:text="100"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/percentFrameLayout2"
+            style="@style/enterTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/ingredientFrameLayout2"
+            app:layout_constraintLeft_toRightOf="@+id/ingredientFrameLayout2">
+        <EditText android:id="@+id/percentTextView2"
+                  style="@style/text"
+                  android:inputType="numberDecimal"
+                  android:text="60"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/percentFrameLayout3"
+            style="@style/enterTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/ingredientFrameLayout3"
+            app:layout_constraintLeft_toRightOf="@+id/ingredientFrameLayout3">
+        <EditText android:id="@+id/percentTextView3"
+                  style="@style/text"
+                  android:inputType="numberDecimal"
+                  android:text="2"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/percentFrameLayout4"
+            style="@style/enterTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/ingredientFrameLayout4"
+            app:layout_constraintLeft_toRightOf="@+id/ingredientFrameLayout4">
+        <EditText android:id="@+id/percentTextView4"
+                  style="@style/text"
+                  android:inputType="numberDecimal"
+                  android:text="2"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/percentFrameLayout5"
+            style="@style/enterTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/ingredientFrameLayout5"
+            app:layout_constraintLeft_toRightOf="@+id/ingredientFrameLayout5">
+        <EditText android:id="@+id/percentTextView5"
+                  style="@style/text"
+                  android:inputType="numberDecimal"
+                  android:text="5"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/percentFrameLayout6"
+            style="@style/enterTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/ingredientFrameLayout6"
+            app:layout_constraintLeft_toRightOf="@+id/ingredientFrameLayout6">
+        <EditText android:id="@+id/percentTextView6"
+                  style="@style/text"
+                  android:inputType="numberDecimal"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/percentFrameLayout7"
+            style="@style/enterTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/ingredientFrameLayout7"
+            app:layout_constraintLeft_toRightOf="@+id/ingredientFrameLayout7">
+        <EditText android:id="@+id/percentTextView7"
+                  style="@style/text"
+                  android:inputType="numberDecimal"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/percentFrameLayout8"
+            style="@style/enterTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/ingredientFrameLayout8"
+            app:layout_constraintLeft_toRightOf="@+id/ingredientFrameLayout8">
+        <EditText android:id="@+id/percentTextView8"
+                  style="@style/text"
+                  android:inputType="numberDecimal"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/percentFrameLayout9"
+            style="@style/enterTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/ingredientFrameLayout9"
+            app:layout_constraintLeft_toRightOf="@+id/ingredientFrameLayout9">
+        <EditText android:id="@+id/percentTextView9"
+                  style="@style/text"
+                  android:inputType="numberDecimal"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/percentFrameLayout10"
+            style="@style/ingredientFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/ingredientFrameLayout10"
+            app:layout_constraintLeft_toRightOf="@+id/ingredientFrameLayout10">
+        <TextView android:id="@+id/percentTextView10"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+
+    <!-- 중량 -->
+    <FrameLayout android:id="@+id/weightFrameLayout0"
+            style="@style/categoryFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/percentFrameLayout0"
+            app:layout_constraintLeft_toRightOf="@+id/percentFrameLayout0"
+    >
+        <TextView android:id="@+id/weightTextView0"
+                  style="@style/categoryText"
+                  android:text="g"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/weightFrameLayout1"
+            style="@style/enterTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/percentFrameLayout1"
+            app:layout_constraintLeft_toRightOf="@+id/percentFrameLayout1"
+    >
+        <EditText android:id="@+id/weightTextView1"
+                  style="@style/text"
+                  android:inputType="numberDecimal"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/weightFrameLayout2"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/percentFrameLayout2"
+            app:layout_constraintLeft_toRightOf="@+id/percentFrameLayout2"
+    >
+        <TextView android:id="@+id/weightTextView2"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/weightFrameLayout3"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/percentFrameLayout3"
+            app:layout_constraintLeft_toRightOf="@+id/percentFrameLayout3"
+    >
+        <TextView android:id="@+id/weightTextView3"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/weightFrameLayout4"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/percentFrameLayout4"
+            app:layout_constraintLeft_toRightOf="@+id/percentFrameLayout4"
+    >
+        <TextView android:id="@+id/weightTextView4"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/weightFrameLayout5"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/percentFrameLayout5"
+            app:layout_constraintLeft_toRightOf="@+id/percentFrameLayout5"
+    >
+        <TextView android:id="@+id/weightTextView5"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/weightFrameLayout6"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/percentFrameLayout6"
+            app:layout_constraintLeft_toRightOf="@+id/percentFrameLayout6"
+    >
+        <TextView android:id="@+id/weightTextView6"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/weightFrameLayout7"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/percentFrameLayout7"
+            app:layout_constraintLeft_toRightOf="@+id/percentFrameLayout7"
+    >
+        <TextView android:id="@+id/weightTextView7"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/weightFrameLayout8"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/percentFrameLayout8"
+            app:layout_constraintLeft_toRightOf="@+id/percentFrameLayout8"
+    >
+        <TextView android:id="@+id/weightTextView8"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/weightFrameLayout9"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/percentFrameLayout9"
+            app:layout_constraintLeft_toRightOf="@+id/percentFrameLayout9"
+    >
+        <TextView android:id="@+id/weightTextView9"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/weightFrameLayout10"
+            style="@style/ingredientFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/percentFrameLayout10"
+            app:layout_constraintLeft_toRightOf="@+id/percentFrameLayout10"
+    >
+        <EditText android:id="@+id/weightTextView10"
+                  style="@style/text"
+                  android:inputType="numberDecimal"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+
+    <!-- 배수 -->
+    <FrameLayout android:id="@+id/multiplyFrameLayout0"
+            style="@style/categoryFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/weightFrameLayout0"
+            app:layout_constraintLeft_toRightOf="@+id/weightFrameLayout0"
+    >
+        <EditText android:id="@+id/multiplyTextView0"
+                  style="@style/categoryText"
+                  android:inputType="numberDecimal"
+                  android:text="1"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/multiplyFrameLayout1"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/weightFrameLayout1"
+            app:layout_constraintLeft_toRightOf="@+id/weightFrameLayout1"
+    >
+        <TextView android:id="@+id/multiplyTextView1"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/multiplyFrameLayout2"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/weightFrameLayout2"
+            app:layout_constraintLeft_toRightOf="@+id/weightFrameLayout2"
+    >
+        <TextView android:id="@+id/multiplyTextView2"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/multiplyFrameLayout3"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/weightFrameLayout3"
+            app:layout_constraintLeft_toRightOf="@+id/weightFrameLayout3"
+    >
+        <TextView android:id="@+id/multiplyTextView3"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/multiplyFrameLayout4"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/weightFrameLayout4"
+            app:layout_constraintLeft_toRightOf="@+id/weightFrameLayout4"
+    >
+        <TextView android:id="@+id/multiplyTextView4"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/multiplyFrameLayout5"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/weightFrameLayout5"
+            app:layout_constraintLeft_toRightOf="@+id/weightFrameLayout5"
+    >
+        <TextView android:id="@+id/multiplyTextView5"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/multiplyFrameLayout6"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/weightFrameLayout6"
+            app:layout_constraintLeft_toRightOf="@+id/weightFrameLayout6"
+    >
+        <TextView android:id="@+id/multiplyTextView6"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/multiplyFrameLayout7"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/weightFrameLayout7"
+            app:layout_constraintLeft_toRightOf="@+id/weightFrameLayout7"
+    >
+        <TextView android:id="@+id/multiplyTextView7"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/multiplyFrameLayout8"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/weightFrameLayout8"
+            app:layout_constraintLeft_toRightOf="@+id/weightFrameLayout8"
+    >
+        <TextView android:id="@+id/multiplyTextView8"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/multiplyFrameLayout9"
+            style="@style/fixTextFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/weightFrameLayout9"
+            app:layout_constraintLeft_toRightOf="@+id/weightFrameLayout9"
+    >
+        <TextView android:id="@+id/multiplyTextView9"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/multiplyFrameLayout10"
+            style="@style/ingredientFrame"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/weightFrameLayout10"
+            app:layout_constraintLeft_toRightOf="@+id/weightFrameLayout10"
+    >
+        <TextView android:id="@+id/multiplyTextView10"
+                  style="@style/text"
+                  android:text="0"
+                  tools:ignore="HardcodedText"/>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

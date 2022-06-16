@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="categoryText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!--Frame style-->
+    <style name="categoryFrame" parent="Widget.Design.ScrimInsetsFrameLayout">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/category_frame</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+    </style>
+
+    <style name="ingredientFrame" parent="Widget.Design.ScrimInsetsFrameLayout">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/ingredient_frame</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+    </style>
+
+    <style name="enterTextFrame" parent="Widget.Design.ScrimInsetsFrameLayout">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/enter_text_frame</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+    </style>
+
+    <style name="fixTextFrame" parent="Widget.Design.ScrimInsetsFrameLayout">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/fix_text_frame</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+    </style>
+</resources>
