@@ -1,13 +1,14 @@
 package app
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.inputmethod.InputMethodManager
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import kr.kro.minestar.test.app.R
-import kotlin.math.roundToInt
+import kr.kro.minestar.utility.number.round
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        fun totalListenerEnable(id: Int) {
+        fun totalListenerEnable(id: Int)    {
             val textView = getTextView(id)
             textView.setOnKeyListener { _, keyCode, keyEvent ->
                 if (keyEvent.action == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
                     val totalPercent = getTextView(TextViewID.TOTAL.percentID).text.toString().toIntOrNull() ?: 0
                     val flourView = getTextView(TextViewID.FLOUR.weightID)
-                    val calcFlour = ((text / totalPercent.toDouble()) * 100).round
+                    val calcFlour = ((text / totalPercent.toDouble()) * 100).round(1)
                     flourView.text = calcFlour.toString()
                     calculate()
                     val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
@@ -138,5 +139,20 @@ class MainActivity : AppCompatActivity() {
         IMPROVER(R.id.ingredientTextView9, R.id.percentTextView9, R.id.weightTextView9, R.id.multiplyTextView9),
         TOTAL(R.id.ingredientTextView10, R.id.percentTextView10, R.id.weightTextView10, R.id.multiplyTextView10),
         ;
+    }
+
+
+    private val finishTime: Long = 1000
+    private var presstime: Long = 0
+
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+
+        val tempTime = System.currentTimeMillis()
+        val intervalTime = tempTime - presstime
+
+        if (intervalTime in 0..finishTime) return finish()
+        presstime = tempTime
+        Toast.makeText(applicationContext, "한번더 누르시면 앱이 종료됩니다", Toast.LENGTH_SHORT).show();
     }
 }
