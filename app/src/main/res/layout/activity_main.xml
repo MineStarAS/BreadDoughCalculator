@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/background"
-        tools:context="app.MainActivity">
+        tools:context="kr.kro.minestar.bread.dough.calculator.MainActivity">
 
     <!-- 재료 -->
     <FrameLayout android:id="@+id/ingredientFrameLayout0"
@@ -253,14 +253,13 @@
                   tools:ignore="HardcodedText"/>
     </FrameLayout>
     <FrameLayout android:id="@+id/weightFrameLayout1"
-            style="@style/enterTextFrame"
+            style="@style/fixTextFrame"
             tools:ignore="MissingConstraints"
             app:layout_constraintBottom_toBottomOf="@+id/percentFrameLayout1"
             app:layout_constraintLeft_toRightOf="@+id/percentFrameLayout1"
     >
-        <EditText android:id="@+id/weightTextView1"
+        <TextView android:id="@+id/weightTextView1"
                   style="@style/text"
-                  android:inputType="numberDecimal"
                   android:text="0"
                   tools:ignore="HardcodedText"/>
     </FrameLayout>
@@ -374,7 +373,7 @@
     >
         <EditText android:id="@+id/multiplyTextView0"
                   style="@style/categoryText"
-                  android:inputType="numberDecimal"
+                  android:inputType="number"
                   android:text="1"
                   tools:ignore="HardcodedText"/>
     </FrameLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="kr.kro.minestar.test.app" >
+    package="kr.kro.minestar.bread.dough.calculator" >
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BreadDoughCalculator" >
         <activity
-            android:name="app.MainActivity"
+            android:name="kr.kro.minestar.bread.dough.calculator.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
